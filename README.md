@@ -311,7 +311,7 @@ Update <span class="icon file">temperature.c</span> to read the temperature sens
 
 Make sure your changes to <span class="icon file">temperature.c</span> have been saved and now from a ssh terminal go to the temperature-sensor folder and type following to build your C program:
 
-`gcc temperature.c -o lcd_temp_sensor -I/usr/local/include/upm -L/usr/local/lib -lupmc-temperature -lupmc-utilities -lmraa -lm -lupm-jhd1313m1 -lupmc-jhd1313m1 -lupm-lcm1602 -lupmc-lcm1602`
+`gcc temperature.c -o lcd_temp_sensor -I/usr/include/upm -lupmc-temperature -lupmc-utilities -lmraa -lm -lupm-jhd1313m1 -lupmc-jhd1313m1 -lupm-lcm1602 -lupmc-lcm1602`
 
 Run your program with following command:
 
