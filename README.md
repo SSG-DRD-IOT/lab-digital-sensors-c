@@ -1,13 +1,13 @@
 ## Read the Objectives
 
-To learn how to build stand alone IoT devices with Arduino 101*. Learn to use sensors and actuators to gather and respond to data. The devices built during this lab will be extended in later labs to send their data to the Intel® IoT Gateway and to the cloud
+* Learn how to build stand alone IoT sensor devices that generate and transmit data the IoT network.
 
 By the end of this module, you should be able to:
 
-*   Connect Grove* IoT Commercial Developer Kit sensors and actuators to your Arduino 101*.
-*   Use the C UPM libraries to control actuators and read data from sensors.
+*   Connect Grove* IoT Commercial Developer Kit sensors.
+*   Use the UPM libraries to read data from sensors.
 
-## Deploy Your First App to the Intel® IoT Gateway
+## Deploy Your First App to the Edge Computer
 
 ### Create a LED blink project
 
@@ -155,8 +155,6 @@ Update **blinky-LED.c** with following changes
 
 ## Build and Run your LED blink program
 
-![](./images/image_arduino_led.png)
-
 Open a SSH terminal to your Intel® IoT Gateway and go to your **LEDBlink** folder. Type the following command to build your C application
 
 `gcc blinky-LED.c -o blinky-LED -lmraa`
@@ -170,8 +168,6 @@ This should execute your program and you should see LED blinking on your Arduino
 ## Setup the temperature sensor and LCD screen
 
 ### Plug in the Grove shield, temperature sensor and the LCD
-
-![temperature sensor](./images/temperature-sensors.jpg)
 
 Connect the Temperature sensor (Analog) and LCD display (I<sup>2</sup>C) to your Arduino 101*. Write code in C and measure temperature in Celsius using upm library, convert it to Fahrenheit, then display it on the LCD.
 
